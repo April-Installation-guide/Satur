@@ -5,7 +5,7 @@ const commands = [
   new SlashCommandBuilder()
     .setName('panel-tickets')
     .setDescription('Publica el panel de tickets (Reportes e Incidentes / Asistencia Aplicación)')
-    .setDefaultMemberPermissions(0) // solo visible/usable por administradores por defecto
+    .setDefaultMemberPermissions(0) 
     .toJSON(),
 ];
 
