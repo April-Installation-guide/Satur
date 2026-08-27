@@ -8,8 +8,6 @@ const {
 const config = require('../config');
 
 const BUTTON_ID = 'voluntariado_emocional';
-
-// Cooldown en memoria: userId -> timestamp en el que puede volver a usarlo
 const cooldowns = new Map();
 
 function registerThreadNotify(client) {
