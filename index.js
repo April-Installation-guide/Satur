@@ -20,11 +20,9 @@ client.once(Events.ClientReady, (c) => {
   console.log(`✅ Bot conectado como ${c.user.tag}`);
 });
 
-// -------- Registro de listeners "pasivos" --------
-registerThreadNotify(client); // Mensaje + botón al abrirse un hilo en el foro
-registerAIHandler(client);    // IA con DeepSeek (ignora pings de @everyone/@here)
+registerThreadNotify(client); 
+registerAIHandler(client);   
 
-// -------- Comandos e interacciones --------
 client.on(Events.InteractionCreate, async (interaction) => {
   try {
     // /panel-tickets -> publica el menú plegable de categorías
