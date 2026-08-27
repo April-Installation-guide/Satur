@@ -11,7 +11,6 @@ const {
 const config = require('../config');
 const { startApplication } = require('./application');
 
-// Embed principal del panel (título, requisitos y explicación) + menú plegable
 function buildTicketPanelEmbed() {
   const embed = new EmbedBuilder()
     .setColor(0x2b2d31)
@@ -43,7 +42,6 @@ function buildTicketPanelEmbed() {
   return { embeds: [embed], components: [buildTicketPanel()] };
 }
 
-// Menú plegable (StringSelectMenu) con las categorías del panel de tickets.
 function buildTicketPanel() {
   const menu = new StringSelectMenuBuilder()
     .setCustomId('ticket_category_select')
